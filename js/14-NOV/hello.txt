@@ -1,0 +1,3 @@
+Hello CommonJS!
+
+this file has some test content in it!

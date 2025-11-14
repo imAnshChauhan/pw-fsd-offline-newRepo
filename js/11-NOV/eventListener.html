@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click Me!</button>
+
+    <script>
+        const button = document.getElementById('btn');
+
+        // 1) function defination: will work
+        // function showMessage() {
+
+        // }
+        
+        // // add event listener
+        // button.addEventListener('click', showMessage);
+
+        // // remove event listener
+        // button.removeEventListener('click', showMessage);
+
+        // 2) wrong way 1
+        // button.addEventListener('click', () => {
+        //     console.log("Hello!");
+        // });
+
+        // 3) will work fine
+        // const showMessage = function() {
+
+        // }
+        
+        // // add event listener
+        // button.addEventListener('click', showMessage);
+
+        // // remove event listener
+        // button.removeEventListener('click', showMessage);
+
+        // 4) will work fine
+        // const showMessage = () => {
+
+        // }
+        
+        // // add event listener
+        // button.addEventListener('click', showMessage);
+
+        // // remove event listener
+        // button.removeEventListener('click', showMessage);
+
+        button.addEventListener('click', () => {
+            console.log("Run once!");
+        }, { once: true });
+    </script>
+</body>
+</html>
